@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>王安石 · 今日箴言</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #000;
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .top-text {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .top-text::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 60px; height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .image-container {
+            max-width: 90%; max-height: 70vh;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .card-image {
+            width: 100%; height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        .bottom-text {
+            margin-top: 25px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .overlay > * { animation: fadeIn 0.8s ease-out forwards; }
+        .top-text { animation-delay: 0.2s; }
+        .image-container { animation-delay: 0.4s; }
+        .bottom-text { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="top-text">—— 临川文脉，每日相伴 ——</div>
+        <div class="image-container">
+            <!-- 🔴 这里替换为王安石的图片地址 -->
+            <img src="https://i.imgur.com/8nk5XBr.jpeg" alt="王安石上上签" class="card-image">
+        </div>
+        <div class="bottom-text">本月已打卡1天</div>
+    </div>
+</body>
+</html>
+<!-- 确保这里没有多余文本 -->
